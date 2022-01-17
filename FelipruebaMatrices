@@ -1,0 +1,23 @@
+const CARRERITAS = ['Lucía', 'Roberto', 'María', 'Andrea', 'Jose'];
+
+// Andrea Adelanta a María
+
+CARRERITAS[2] = 'Andrea';
+CARRERITAS[3] = 'María';
+console.log(CARRERITAS);
+
+// Jose es descalificado de la carrera
+
+CARRERITAS.pop();
+console.log(CARRERITAS);
+
+// Detrás de Lucía y antes de Roberto se clasifican tres nuevos corredores: Cristobal, Fernanda y Armando.
+
+CARRERITAS = ['Lucía', 'Cristóbal', 'Fernanda', 'Armando', 'Roberto', 'Andrea', 'Maria'];
+
+// Nuevo concursante que toma el primer puesto: Federico.
+
+CARRERITAS.unshift('Federico');
+CARRERITAS.forEach(function (el, i){
+    console.log(el);
+});
