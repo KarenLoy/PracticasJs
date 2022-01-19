@@ -1,0 +1,60 @@
+// Ejercicio 1
+// Parte 1. Hay tres personas esperando el banco. Sus nombres, en orden, son Sofía, David y Juan. Cree una matriz que tenga estos tres nombres en orden.
+
+var fila = ["Sofia", "David", "Juan"];
+console.log(fila);
+//Parte 2. Se agregan dos personas más al final de la fila: Sara y Augustin. La primera persona en la fila es llamada al cajero. ¿Cómo es la cola?
+
+var fila2 = fila.push("Sara","Augustin"); /* se agregan dos persona al final de la fila */
+console.log(fila);
+
+var fila3 = fila.shift(); /* la primer persona es llamada a la caja, ya no pertenece a la fila*/
+console.log(fila);
+
+// Parte 3.Resulta que David estaba reservando un lugar para su amiga Renata. Ella aparece y va detrás de él en la fila. Aparece una persona más (Elena) y va hasta el final de la fila. ¿Cómo es la cola?
+
+var fila = ["David","Renata","Juan","Sara","Augustin","Elena"];
+console.log(fila);
+
+// EJERCICIO 2 
+/* – Imprimir repetidamente el valor de la variable xValue, disminuyéndolo en 0,5 cada vez,
+siempre que xValue siga siendo positivo. */
+var xValue = 1
+var x = 0.5;
+while(xValue >0 ){
+    xValue -= x;
+    console.log(xValue);
+}
+
+/* - Imprime todos los números impares entre 1 - 100. */
+var num  = 0;
+while(num<100){
+    num++
+    if (num%2 !=0){
+        console.log(num);
+    }
+}
+
+
+/* Escriba un método con un bucle while para imprimir del 1 al n entre corchetes.
+Por ejemplo, si n = 6 imprime [1] [2] [3] [4] [5] [6] */
+
+var n = 6;
+var contador = 0;
+while(contador<n){
+    contador++
+    console.log("["+contador+"]");
+}
+
+/* - Escriba un método con un bucle while que calcule la suma de los primeros n enteros positivos:
+suma = 1 + 2 + 3 + … + n
+Ejemplos:
+n = 5 suma = 15
+n = 19 suma = 190 */
+
+var n2 = 4;
+var suma = 0;
+while(suma<n2){
+    suma++
+    console.log(suma);
+}
