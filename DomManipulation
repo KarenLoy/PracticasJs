@@ -1,0 +1,62 @@
+//https://github.com/generation-org/JS/tree/master/JS-06%20-%20DOM%20Manipulation#exercise-3
+// Ejercicio 1. By clicking on the button, the font, font size, and color of the paragraph text should change.
+
+function js_style(){
+    document.getElementById("text").style.fontFamily = "sans-serif";
+    document.getElementById("text").style.fontSize = "30px";
+    document.getElementById("text").style.color = "red";
+}
+
+// Ejercicio 2. Write a JavaScript function to get the values of First and Last name from the following form. Print out the names to the console.
+
+function getFormvalue(nombre){
+    var nombre = document.getElementsByTagName("input")[0].value
+    var apellido = document.getElementsByTagName("input")[1].value
+    alert(nombre+ " "+ apellido);
+}
+
+//Ejercicio 4. Write a function and call it when clicking a button to show an alert with:The number of links on the page; The first link in the page; The last link in the page
+
+function js_enlaces(){
+    var links = document.getElementsByTagName("a").length
+    var firstLink = document.getElementById("google").innerHTML;
+    var lastLink = document.getElementById("facebook").innerHTML;
+    alert("numero de enlaces: " +links+ " primer enlace: " +firstLink+ " ultimo enlace: " +lastLink);
+}
+
+
+/* Ejercicio 5. Escribe el código que hará lo siguiente:
+
+*/
+// 1- Seleccione la sección con una identificación de contenedor sin usar querySelector.
+document.getElementById("container");
+
+
+// 2- Seleccione la sección con una identificación de contenedor usando querySelector.
+document.querySelector("#container").style.fontSize ="25px";
+
+
+// 3- Seleccione toda la lista de elementos con una clase de "segundo".
+document.querySelectorAll("li.second").style.fontSize = "30px";
+
+// 4- Seleccione un elemento de la lista con una clase de tercero, pero solo el elemento de la lista dentro de la etiqueta ol.
+
+document.querySelector("ol.third").style.color = "red";
+
+//5- Dar el texto "¡Hola!" a la sección con un ID de contenedor.
+document.getElementById("container").innerHTML = "¡Hola!"
+
+// 6- Agregue la clase principal al div con una clase de pie de página.
+document.querySelector('.footer').classList.add('main');
+
+// 7- Elimine la clase principal en el div con una clase de pie de página.
+document.querySelector('.footer').classList.remove('main');
+
+// 8- Crea un nuevo elemento li.
+
+document.createElement("li");
+
+// 9- Dale al li el texto "cuatro".
+document.getElementById("Li").innerHTML = "holis"
+
+// 10- Agregue el li al elemento ul.
